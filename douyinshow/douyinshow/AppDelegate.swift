@@ -7,14 +7,18 @@
 //
 
 import UIKit
-
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
-    var window: UIWindow?
+    lazy var window: UIWindow? = UIWindow.init(frame: UIScreen.main.bounds)
 
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
+        let vc = YouViewController()
+        
+        self.window?.rootViewController = vc
+        window?.makeKeyAndVisible()
+
         // Override point for customization after application launch.
         return true
     }
@@ -41,6 +45,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
     }
 
+    
 
 }
 

@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F792F0402100359700FD00CE /* MyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F792F03F2100359700FD00CE /* MyViewController.swift */; };
+		F792F043210035A800FD00CE /* YouViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F792F041210035A800FD00CE /* YouViewController.swift */; };
+		F792F044210035A800FD00CE /* YouViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F792F042210035A800FD00CE /* YouViewController.xib */; };
+		F792F0472100367000FD00CE /* YouTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F792F0452100367000FD00CE /* YouTableViewCell.swift */; };
+		F792F0482100367000FD00CE /* YouTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F792F0462100367000FD00CE /* YouTableViewCell.xib */; };
 		F7ABC30C20D0B7BA00CC3F73 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7ABC30B20D0B7BA00CC3F73 /* AppDelegate.swift */; };
 		F7ABC30E20D0B7BA00CC3F73 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7ABC30D20D0B7BA00CC3F73 /* ViewController.swift */; };
 		F7ABC31120D0B7BA00CC3F73 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F7ABC30F20D0B7BA00CC3F73 /* Main.storyboard */; };
@@ -15,6 +20,11 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		F792F03F2100359700FD00CE /* MyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyViewController.swift; sourceTree = "<group>"; };
+		F792F041210035A800FD00CE /* YouViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YouViewController.swift; sourceTree = "<group>"; };
+		F792F042210035A800FD00CE /* YouViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = YouViewController.xib; sourceTree = "<group>"; };
+		F792F0452100367000FD00CE /* YouTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YouTableViewCell.swift; sourceTree = "<group>"; };
+		F792F0462100367000FD00CE /* YouTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = YouTableViewCell.xib; sourceTree = "<group>"; };
 		F7ABC30820D0B7BA00CC3F73 /* douyinshow.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = douyinshow.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F7ABC30B20D0B7BA00CC3F73 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F7ABC30D20D0B7BA00CC3F73 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -60,6 +70,11 @@
 				F7ABC31220D0B7BC00CC3F73 /* Assets.xcassets */,
 				F7ABC31420D0B7BC00CC3F73 /* LaunchScreen.storyboard */,
 				F7ABC31720D0B7BC00CC3F73 /* Info.plist */,
+				F792F03F2100359700FD00CE /* MyViewController.swift */,
+				F792F041210035A800FD00CE /* YouViewController.swift */,
+				F792F042210035A800FD00CE /* YouViewController.xib */,
+				F792F0452100367000FD00CE /* YouTableViewCell.swift */,
+				F792F0462100367000FD00CE /* YouTableViewCell.xib */,
 			);
 			path = douyinshow;
 			sourceTree = "<group>";
@@ -96,6 +111,7 @@
 				TargetAttributes = {
 					F7ABC30720D0B7BA00CC3F73 = {
 						CreatedOnToolsVersion = 9.4;
+						LastSwiftMigration = 0940;
 					};
 				};
 			};
@@ -124,6 +140,8 @@
 			files = (
 				F7ABC31620D0B7BC00CC3F73 /* LaunchScreen.storyboard in Resources */,
 				F7ABC31320D0B7BC00CC3F73 /* Assets.xcassets in Resources */,
+				F792F0482100367000FD00CE /* YouTableViewCell.xib in Resources */,
+				F792F044210035A800FD00CE /* YouViewController.xib in Resources */,
 				F7ABC31120D0B7BA00CC3F73 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -136,7 +154,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				F7ABC30E20D0B7BA00CC3F73 /* ViewController.swift in Sources */,
+				F792F0402100359700FD00CE /* MyViewController.swift in Sources */,
+				F792F043210035A800FD00CE /* YouViewController.swift in Sources */,
 				F7ABC30C20D0B7BA00CC3F73 /* AppDelegate.swift in Sources */,
+				F792F0472100367000FD00CE /* YouTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -280,15 +301,18 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = DNKCHJG2R6;
 				INFOPLIST_FILE = douyinshow/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.fuyuan.douyinshow;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -298,9 +322,11 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = DNKCHJG2R6;
 				INFOPLIST_FILE = douyinshow/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
